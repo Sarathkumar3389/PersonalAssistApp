@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">PersonalAssistantApp</string>
+    <string name="Main_name">Status</string>
+    <string name="Summary_name">Finance Summary</string>
+    <string name="Update_name">Existing Items</string>
+    <string name="Category1">Cat1</string>
+    <string name="Category2">Cat2</string>
+    <string name="Category3">Cat3</string>
+    <string name="Category4">Cat4</string>
 </resources>

@@ -9,15 +9,24 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
 
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/Main_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"></action>
                 <category android:name="android.intent.category.LAUNCHER"></category>
             </intent-filter>
         </activity>
 
-        <activity android:name=".SummaryActivity"></activity>
-        <activity android:name=".UpdateActivity"></activity>
+        <activity
+            android:name=".SummaryActivity"
+            android:label="@string/Summary_name">
+        </activity>
+
+        <activity
+            android:name=".UpdateActivity"
+            android:label="@string/Update_name">
+        </activity>
     </application>
 
 
