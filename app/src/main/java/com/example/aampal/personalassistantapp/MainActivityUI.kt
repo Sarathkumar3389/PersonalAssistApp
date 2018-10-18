@@ -28,7 +28,8 @@ class  MainActivityUI : AnkoComponent<MainActivity>{
 
             appBarLayout{
                 lparams(matchParent, wrapContent)
-                val myTabLayout = tabLayout{
+
+                tabLayout{
                     id = tabID
                     lparams(matchParent, wrapContent) {
                         tabGravity = FILL
@@ -37,7 +38,7 @@ class  MainActivityUI : AnkoComponent<MainActivity>{
                 }
             }
 
-           val myViewPager = viewPager{
+           viewPager{
                 id = pagerID
 
             }.lparams(matchParent, matchParent)

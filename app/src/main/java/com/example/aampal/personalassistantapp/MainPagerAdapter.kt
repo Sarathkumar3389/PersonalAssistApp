@@ -16,6 +16,7 @@ class MainPagerAdapter(fm: FragmentManager):FragmentPagerAdapter(fm){
                 else -> null
             }
     }
+
     override fun getCount(): Int {
         return 4
     }

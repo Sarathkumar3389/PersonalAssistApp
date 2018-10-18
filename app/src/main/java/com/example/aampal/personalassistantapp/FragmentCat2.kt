@@ -22,7 +22,6 @@ class FragmentCat2: Fragment() {
             }
         }
 
-
         return ui.view
     }
 

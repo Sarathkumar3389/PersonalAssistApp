@@ -2,6 +2,7 @@ package com.example.aampal.personalassistantapp
 
 import android.os.Bundle
 import android.support.design.widget.TabLayout
+import android.support.v4.app.Fragment
 import android.support.v4.view.ViewPager
 import android.support.v7.app.AppCompatActivity
 import android.view.View
@@ -12,16 +13,29 @@ class MainActivity : AppCompatActivity(){
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-
         val ui = MainActivityUI()
         ui.setContentView(this)
+
+
+        //-------------------------------------------------------------------
+        // Sending values to Fragments
+        val name = "Apple"
+        val rate = 100
+        val mfragment = Fragment()
+        val mArg = Bundle()
+        mArg.putString("NameKEY", name)
+        mArg.putString("RateKey",rate.toString())
+        mfragment.arguments = mArg
+        //-------------------------------------------------------------------
+
+
 
         val tabLayout : TabLayout = findViewById(MainActivityUI.tabID)
         val viewPager : ViewPager = findViewById(MainActivityUI.pagerID)
 
         // Initialize the MoviesPagerAdapter and Set the Adapter and
         viewPager!!.adapter = MainPagerAdapter(supportFragmentManager)
+
         // the TabLayout for the ViewPager
         tabLayout.setupWithViewPager(viewPager)
 
@@ -29,6 +43,7 @@ class MainActivity : AppCompatActivity(){
         tabLayout.getTabAt(1)?.setText(R.string.Category2)
         tabLayout.getTabAt(2)?.setText(R.string.Category3)
         tabLayout.getTabAt(3)?.setText(R.string.Category4)
+
 
 
 
